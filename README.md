@@ -79,39 +79,40 @@ dalla linea di comando. La prima linea di output dovrebbe essere: `:-) GROMACS -
 
 ## Notebook per gli esercizi
 
-Move to the any of the folders (e.g. `cd biphase`) and open the related notebook by running:
+Spostatevi in una delle sotto-cartelle (ad esempio `cd molecular-dynamics/cnt`) e aprite il notebook corrispondente eseguendo:
 
 	jupyter-notebook <name-of-the-notebook>.ipynb
 
-You can now run the notebook cell-by-cell. You may have to edit some simulation configuration file; in this case, open Jupyter Notebook in the folder, by just running:
+Ora potete eseguire il notebook cella per cella. Negli esercizi, potreste dover ispezionare o modificare i file di configurazione delle simulazioni; in tal caso, aprite Jupyter Notebook nella cartella corrispondente, semplicemente eseguendo:
 
 	jupyter-notebook
 
-and navigate to the file you want to edit. Sorry ladies and gentlemen, the notebook itself is the best, and only, GUI you’re going to get!
+e navigate/aprite il file che volete ispezionare/modificare.
 
-Alternatively, you can open the file from `bash` (i.e. _outside the notebook_) using your favourite text editor, like `vim`, `code`, `emacs`, `gedit` or `featherpad`. They are all equal, but `vim` is more equal than the others.
+In alternativa, potete aprire i file di configurazione da linea di comando (cioè _fuori dal notebook_) usando il vostro editor di testo preferito, come `vim`, `code`, `emacs`, `gedit` o `featherpad`. Sono tutti uguali, ma `vim` è più uguale degli altri.
 
 ## Visualizzazione (facoltativo)
 
-In the notebooks, you will find `nglview` widgets allowing inline visualization of molecular simulation results. There are other (possibly better) solutions _outside the notebook_:
-- VMD: https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD - free of charge, you just need to register your institutional email;
-- OVITO: https://www.ovito.org/manual/installation.html - there's a free limited version and a full commercial version (the free version is more than enough for visualization purposes, plus you can use the complete Python API without having to pay);
-- VEGA ZZ: https://www.ddl.unimi.it/cms/index.php?Software_projects:VEGA_ZZ:Download - requires registration and activation key;
-- PyMOL: https://www.pymol.org/ - requires registration and activation key.
-
-In terms of "GROMACS friendliness", **VMD** is definitely the best. I really suggest you install VMD.
+Le traiettorie e le configurazioni sono visualizzate nei notebooks tramite widgets `nglview`. Esistono anche altre soluzioni (potenzialmente migliori) al _fuori dal notebook_:
+- VMD: https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD - gratis, richiede una registrazione con email istituzionale;
+- OVITO: https://www.ovito.org/manual/installation.html - ha una versione gratuita con funzionalità limitate e una versione commerciale completa (la versione gratuita è più che sufficiente, inoltre consente di usare l’intero API Python);
+- VEGA ZZ: https://www.ddl.unimi.it/cms/index.php?Software_projects:VEGA_ZZ:Download - richiede registrazione e codice di attivazione;
+- PyMOL: https://www.pymol.org/ - richiede registrazione e codice di attivazione.
 
 ## Software consigliato (facoltativo)
 
-- **VMD** :film_projector: - see the previous section;
-- **Grace** :bar_chart: - a very lightweight plotting software, very GROMACS-friendly (https://plasma-gate.weizmann.ac.il/Grace/);
-- **MATLAB** :computer: - the postprocessing scripts for the `cnt` and the `zeolite` are also provided in MATLAB format. 
+- **VMD** :film_projector: - vedi sopra;
+- **Grace** :bar_chart: - un software di plotting molto leggero, molto "GROMACS-friendly" (https://plasma-gate.weizmann.ac.il/Grace/);
+- **MATLAB** :triangular_ruler: - gli script di post-processing in `molecular-dynamics` sono disponibili anche in formato MATLAB;
+- **Visual Studio Code** :computer: - GUI per programmazione molto versatile.
 
 ## Ringraziamenti
 
-Provided by the Multi-Scale Modeling Lab of Politecnico di Torino (Italy). These resources are intended for pedagogical purposes, and were designed for the undergraduate and third-cycle courses at Politecnico di Torino (2023-2026).
+Messo a disposizione dal multi-Scale ModeLing Laboratory (SMaLL) del Politecnico di Torino (Torino, Italia). Queste risorse sono destinate a scopi didattici e sono state progettate per i corsi di laurea e di terzo ciclo del Politecnico di Torino (2023-2026).
 
-Authors:
+Autori:
 - Matteo Fasano (matteo.fasano@polito.it)
 - Michele Pellegrino (michele.pellegrino@polito.it)
+- Marina Provenzano (marina.provenzano@polito.it)
+- Fabiano Tarulli (fabiano.tarulli@polito.it)
 
