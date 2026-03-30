@@ -91,6 +91,8 @@ e navigate/aprite il file che volete ispezionare/modificare.
 
 In alternativa, potete aprire i file di configurazione da linea di comando (cioè _fuori dal notebook_) usando il vostro editor di testo preferito, come `vim`, `code`, `emacs`, `gedit` o `featherpad`. Sono tutti uguali, ma `vim` è più uguale degli altri.
 
+**[DESCRIZIONE]**
+
 ## Visualizzazione (facoltativo)
 
 Le traiettorie e le configurazioni sono visualizzate nei notebooks tramite widgets `nglview`. Esistono anche altre soluzioni (potenzialmente migliori) al _fuori dal notebook_:
