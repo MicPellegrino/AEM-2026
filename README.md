@@ -2,30 +2,11 @@
 
 ## Content
 
-- [Simulated systems](#simulated-systems)
 - [How to create and test the virtual environment](#how-to-create-and-test-the-virtual-environment)
 - [How to run exercise notebooks](#how-to-run-exercise-notebooks)
 - [How to visualize the results](#how-to-visualize-the-results)
 - [Additional suggested software](#additional-suggested-software)
 - [Acknowledgements](#acknowledgements)
-
-## Simulated systems
-
-### Heat transfer in a carbon nanotube (`cnt`)
-
-This first exercise will introduce you to the basics of Molecular Dynamics (creating configuration files, algorithms, force fields, topologies, thermalization and post-processing). The final goal will be to evaluate the thermal conductivity of a carbon nanotube using a non-equilibrium method. Zero to hero.
-
-### Water adsorption in zeolite (`zeolite`)
-
-The second exercise will introduce liquid environments (solvation) and water models. You will be asked to simulate a zeolite matrix at different hydration levels in order to study its energy storage properties. You will also compute the self-diffusion coefficient of water, a typical observable obtainable from Molecular Dynamics.
-
-### Liquid-liquid interfaces (`biphase`)
-
-The third exercise moves toward multicomponent liquid systems and introduces pressure control (barostat). You will simulate the formation of the interface between water and hexane and compute its surface tension. In the final part, pentanol will be added to the mixture, and you will assess how it affects the surface properties.
-
-### Wetting of flat and rough surfaces (`wetting`)
-
-In the fourth exercise, you will simulate a water droplet spreading on an “aluminum” crystal. You will compute its contact angle and study how it changes as the strength of liquid–solid interactions is increased. Finally, you will explore how wetting states are affected by the presence of surface nanostructures.
 
 ## How to create and test the virtual environment
 
