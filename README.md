@@ -1,67 +1,83 @@
-# Innovative modelling approaches for multi-scale heat and mass transfer - Molecular Dynamics simulations
+# Applicazioni energetiche dei materiali (primavera 2026) - Dinamica Molecolare e Machine Learning
 
-## Content
+## Indice
 
-- [How to create and test the virtual environment](#how-to-create-and-test-the-virtual-environment)
-- [How to run exercise notebooks](#how-to-run-exercise-notebooks)
-- [How to visualize the results](#how-to-visualize-the-results)
-- [Additional suggested software](#additional-suggested-software)
-- [Acknowledgements](#acknowledgements)
+- [Come ottenere una distribuzione di Linux](#come-ottenere-una-distribuzione-di-linux)
+- [Come creare il virtual environment](#come-creare-il-virtual-environment)
+- [Notebook per gli esercizi](#notebook-per-gli-esercizi)
+- [Visualizzazione dei risultati](#how-to-visualize-the-results)
+- [Software consigliato (facoltativo)](#additional-suggested-software)
+- [Ringraziamenti](#acknowledgements)
 
-## How to create and test the virtual environment
+## Come ottenere una distribuzione di Linux
 
-**Step :zero: - Get a Linux distribution**:
+### Utenti Linux (Ubuntu, Debian, Fedora, ...)
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" width="50">
 
-- If you are a **Linux** user, then you are already good to go;
-- If you are a **Windows** user, setup the Windows Subsystem for Linux: https://learn.microsoft.com/en-us/windows/wsl/install (recommended), or use a virtual machine (discouraged).
-- If you are a **Mac** user, the environment and the notebooks have also been tested on the latest MacOS with m2 and m4 architecture. So you should also be good to go.
+Potete saltare questo punto.
 
-**Step :one: - Download and install Conda or one of its variants**:
+### Utenti macOS
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Finder_icon_macOS_Yosemite.png" width="50">
+
+L'environment e i notebook sono stati testati su distribuzioni recenti di macOS e architettura Apple M4, quindi non _dovrebbero_ esserci problemi.
+
+### Utenti Windows
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Logo_%281992-2001%29.svg" width="50">
+Avete due possibilità:
+
+- :green_circle: Scelta consigliata :green_circle: : attivare e usare **Windows Subsystem for Linux (WSL)**. **[TODO]**
+- :yellow_circle: Piano B :yellow_circle: : usare una Virtal Machine (VM) tramite **oVirt**. **[TODO]**
+
+## Come creare il virtual environment
+
+**Step :one: - Installare Conda o una delle sue varianti**:
 - Conda: https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html;
 - Miniconda: https://www.anaconda.com/docs/getting-started/miniconda/install;
 - Mamba: https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html;
 - Micromamba: https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html.
 
-Example installation of Miniconda (tested on `wsl`):
+Esempio di installazione di Miniconda (testato su `wsl`):
 
 	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 	./Miniconda3-latest-Linux-x86_64.sh
 	# Follow the instructions
 
-I will refer to Conda from now on, but mind that any variant should work just fine. In my personal experience, Mamba and Micromamba are significantly faster when it comes to environment creation and management. Micromamba should be the most lightweight. However, don't bother switching if you already have Conda installed. 
+Da ora in poi farò riferimento a Conda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Da esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment, mentre Micromamba è la variante più "lightweight". tuttavia, se Conda è già installato sul vostro sistema, non è necessario installare altre versioni.
 
-:warning: The installation instructions should mention how to setup and activate Conda after its installation. You may want (or need) to add some lines to `.bashrc` and/or `.profile` in order to automatically activate Conda when opening a new `bash` session.
+:warning: Micromamba è già installato sulle Virtual Machines di oVirt.
 
-**Step :two: - Create the virtual environment** by running:
+:warning: Le istruzioni di installazione spiegano anche come configurare e attivare Conda in modo automatico. Potresti voler (o dover) aggiungere alcune righe al file `.bashrc` nella tua home directory per attivare automaticamente Conda all’apertura di una nuova sessione di `bash`. Ad esempio: **[TODO]**
+
+**Step :two: - Creare il virtual environment** eseguendo:
 
 	conda env create -f environment.yml
 
-It may be necessary to set `channel-priority strict` to force `conda` to install the required version of Jupyter Notebook:
+Potrebbe essere necessario impostare `channel-priority strict` per costringere `conda` a installare la versione corretta di Jupyter Notebook (comando analogo per `miniconda`):
 
 	conda config --set channel_priority strict
 	conda env create -f environment.yml
 
-If you use `mamba` instead:
+Per chi invece usa `mamba` (comando analogo per `micromamba`):
 
 	mamba env create -f environment.yml --channel-priority strict
 
-:warning: Since this repository could be modified concurrently with the course, always run `git pull` before you start working on the exercises and check if `environment.yml` has changed! In case, update the virtual environment.
+:warning: Poiché questa repository potrebbe essere modificata durante il corso, eseguite sempre `git pull` prima di iniziare a lavorare sugli esercizi e verificate che `environment.yml` non sia cambiato! In caso contrario, aggiornate il virtual environment.
 
-:warning: If your CUDA backend version is relatively new, the process of creating the environment may take some time (1-5min). Do not despair, just wait.
+:warning: Se la versione della vostra libreria CUDA di sistema è relativamente recente, la creazione dell’environment potrebbe richiedere un po’ di tempo (1-5 minuti). Non disperate, basta aspettare.
 
-**Step :three: - Test GROMACS installation**. Activate the virtual environment by first running:
+**Step :three: - Testare l'installazione di GROMACS**. Attivate prima il virtual environment eseguendo (nel caso sostituire `conda` con `mamba`, etc...):
 
-	conda activate inmod-md
+	conda activate aem-2026
 
-and then run: 
+e poi eseguendo: 
 
 	gmx help mdrun
  
-from the command line. The first line should be: `:-) GROMACS - gmx help, 2025.4-conda_forge (-:`.
+dalla linea di comando. La prima linea di output dovrebbe essere: `:-) GROMACS - gmx help, 2025.4-conda_forge (-:`.
 
-:warning: If the command `gmx` is not found or you get something else other than `2025.4-conda_forge`, it means that either the Conda environment is not active or that the GROMACS dependency has not been installed.
+:warning: Se il comando `gmx` non viene trovato oppure ottenete una versiona diversa da `2025.4-conda_forge`, significa che l’environment non è attivo oppure che la libreria (dependency) di GROMACS non è stata installata.
 
-## How to run exercise notebooks
+## Notebook per gli esercizi
 
 Move to the any of the folders (e.g. `cd biphase`) and open the related notebook by running:
 
