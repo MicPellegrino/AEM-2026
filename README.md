@@ -1,13 +1,13 @@
-# Applicazioni energetiche dei materiali (primavera 2026) - Dinamica Molecolare e Machine Learning
+# Applicazioni Energetiche dei Materiali (2026) - Dinamica Molecolare e Machine Learning
 
 ## Indice
 
 - [Come ottenere una distribuzione di Linux](#come-ottenere-una-distribuzione-di-linux)
 - [Come creare il virtual environment](#come-creare-il-virtual-environment)
 - [Notebook per gli esercizi](#notebook-per-gli-esercizi)
-- [Visualizzazione dei risultati](#how-to-visualize-the-results)
-- [Software consigliato (facoltativo)](#additional-suggested-software)
-- [Ringraziamenti](#acknowledgements)
+- [Visualizzazione (facoltativo)](#visualizzazione-facoltativo)
+- [Software consigliato (facoltativo)](#software-consigliato-facoltativo)
+- [Ringraziamenti](#ringraziamenti)
 
 ## Come ottenere una distribuzione di Linux
 
@@ -91,7 +91,7 @@ and navigate to the file you want to edit. Sorry ladies and gentlemen, the noteb
 
 Alternatively, you can open the file from `bash` (i.e. _outside the notebook_) using your favourite text editor, like `vim`, `code`, `emacs`, `gedit` or `featherpad`. They are all equal, but `vim` is more equal than the others.
 
-## How to visualize the results
+## Visualizzazione (facoltativo)
 
 In the notebooks, you will find `nglview` widgets allowing inline visualization of molecular simulation results. There are other (possibly better) solutions _outside the notebook_:
 - VMD: https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD - free of charge, you just need to register your institutional email;
@@ -101,13 +101,13 @@ In the notebooks, you will find `nglview` widgets allowing inline visualization 
 
 In terms of "GROMACS friendliness", **VMD** is definitely the best. I really suggest you install VMD.
 
-## Additional suggested software
+## Software consigliato (facoltativo)
 
 - **VMD** :film_projector: - see the previous section;
 - **Grace** :bar_chart: - a very lightweight plotting software, very GROMACS-friendly (https://plasma-gate.weizmann.ac.il/Grace/);
 - **MATLAB** :computer: - the postprocessing scripts for the `cnt` and the `zeolite` are also provided in MATLAB format. 
 
-## Acknowledgements
+## Ringraziamenti
 
 Provided by the Multi-Scale Modeling Lab of Politecnico di Torino (Italy). These resources are intended for pedagogical purposes, and were designed for the undergraduate and third-cycle courses at Politecnico di Torino (2023-2026).
 
