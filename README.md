@@ -14,12 +14,12 @@
 ### Utenti Linux (Ubuntu, Debian, Fedora, ...)
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" width="50">
 
-Potete saltare questo punto.
+Potete saltare questa sezione.
 
 ### Utenti macOS
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Finder_icon_macOS_Yosemite.png" width="50">
 
-L'environment e i notebook sono stati testati su distribuzioni recenti di macOS e architettura Apple M4, quindi non _dovrebbero_ esserci problemi.
+L'environment e i notebook sono stati testati su distribuzioni recenti di macOS e architettura Apple M4, quindi non _dovrebbero_ esserci problemi. Anche voi potete saltare questa sezione.
 
 ### Utenti Windows
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Logo_%281992-2001%29.svg" width="50">
@@ -27,7 +27,7 @@ Avete due possibilità:
 
 - :green_circle: Scelta consigliata :green_circle: : attivare e usare **Windows Subsystem for Linux (WSL)**. Trovate le istruzioni per l'installazione qui: https://learn.microsoft.com/en-us/windows/wsl/install. Una volta installato, per attivarlo basterà aprire PowerShell ed eseguire `wsl` da linea di comando; questo dovrebbe aprire una sessione `bash` Linux. Assicuratevi di essere nella vostra `home` directory (i.e. **non** `mnt`), nel caso eseguite semplicemente `cd` sulla linea di comando per spostarvi nella `home`. 
 
-- :yellow_circle: Piano B :yellow_circle: : usare una Virtal Machine (VM) tramite **oVirt**. Trovate le istruzioni per accedere alle VM e caricare/scaricare dati qui: https://webdoc.laib.polito.it/index.php/5-procedure-operative/17-4-12-supporto-specifico-ai-corsi/150-vdi-linux-new-2
+- :yellow_circle: Piano B :yellow_circle: : usare una Virtal Machine (VM) tramite **oVirt**. Trovate le istruzioni per accedere alle VM e caricare/scaricare dati a questo link: https://webdoc.laib.polito.it/index.php/5-procedure-operative/17-4-12-supporto-specifico-ai-corsi/150-vdi-linux-new-2
 
 ## Come creare il virtual environment
 
