@@ -25,7 +25,7 @@ L'environment e i notebook sono stati testati su distribuzioni recenti di macOS 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Logo_%281992-2001%29.svg" width="50">
 Avete due possibilità:
 
-- :green_circle: Scelta consigliata :green_circle: : attivare e usare **Windows Subsystem for Linux (WSL)**. Trovate le istruzioni per l'installazione qui: https://learn.microsoft.com/en-us/windows/wsl/install. Una volta installato, per attivarlo basta aprire PowerShell ed eseguire `wsl` da linea di comando; questo dovrebbe aprire una sessione `bash` Linux. Assicuratevi di essere nella vostra `home` directory (i.e. **non** `mount`), nel caso eseguite semplicemente `cd` sulla linea di comando per spostarvi nella `home`. 
+- :green_circle: Scelta consigliata :green_circle: : attivare e usare **Windows Subsystem for Linux (WSL)**. Trovate le istruzioni per l'installazione qui: https://learn.microsoft.com/en-us/windows/wsl/install. Una volta installato, per attivarlo basterà aprire PowerShell ed eseguire `wsl` da linea di comando; questo dovrebbe aprire una sessione `bash` Linux. Assicuratevi di essere nella vostra `home` directory (i.e. **non** `mnt`), nel caso eseguite semplicemente `cd` sulla linea di comando per spostarvi nella `home`. 
 
 - :yellow_circle: Piano B :yellow_circle: : usare una Virtal Machine (VM) tramite **oVirt**. Trovate le istruzioni per accedere alle VM e caricare/scaricare dati qui: https://webdoc.laib.polito.it/index.php/5-procedure-operative/17-4-12-supporto-specifico-ai-corsi/150-vdi-linux-new-2
 
@@ -41,25 +41,21 @@ Esempio di installazione di Miniconda (testato su `wsl`):
 	./Miniconda3-latest-Linux-x86_64.sh
 	# Follow the instructions
 
-Da ora in poi farò riferimento a Miniconda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Da esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment. Tuttavia, se Miniconda è già installato sul vostro sistema, non è necessario installare altre versioni. Sconsiglio di utilizzare Anaconda.
+Da ora in poi farò riferimento a Miniconda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Da esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment. Tuttavia, se Miniconda è già installato sul vostro sistema, non è necessario installare altre versioni. Sconsiglio l'utilizzo di Anaconda.
 
-:warning: Una versione "lightweight" di Mamba, chiamata Micromamba, è già installata sulle VM di oVirt, basterà sostituire il comando `mamba` con `micromamba`. **[TODO]**
+:yellow_circle: Per chi usa oVirt :yellow_circle: : trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM, basterà sostituire il comando per attivare l'environment con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:. Visto che le VM hanno accesso limitato a internet, non sarà possibile clonare questa repository GitHub. Troverete tutti i file necessari per gli esercizi sul Portale della Didattica.
 
-:warning: Le istruzioni di installazione spiegano anche come configurare e attivare l'environment manager in modo automatico. Potreste voler (o dover) aggiungere alcune righe al file `.bashrc` nella tua home directory per attivare automaticamente l'environment manager all’apertura di una nuova sessione di `bash`. Ad esempio, se usate Miniconda: 
+:warning: Le istruzioni di installazione spiegano anche come configurare e attivare l'environment manager in modo automatico. Potreste dover aggiungere alcune righe al file `.bashrc` nella tua home directory per attivare automaticamente l'environment manager all’apertura di una nuova sessione di `bash`. Se usate Miniconda, questo dovrebbe avvenire automaticamente una volta eseguito per la prima volta: 
 
-	[TODO]
+	conda init
 
-mentre se usate Mamba:
+mentre se usate Mamba, potreste dover aggiungere queste righe al file `.bashrc`:
 
-	# Apri .bashrc con un editor di testo
+	# Apri .bashrc col tuo editor di testo preferito...
 	export MAMBA_EXE='<directory-dove-hai-installato-mamba>/mambaforge/bin/mamba';
 	export MAMBA_ROOT_PREFIX='<directory-dove-hai-installato-mamba>/mambaforge';
 
 **Step :two: - Creare il virtual environment** eseguendo:
-
-	conda env create -f environment.yml
-
-Potrebbe essere necessario impostare `channel-priority strict` per costringere `conda` a installare la versione corretta di Jupyter Notebook (comando analogo per `miniconda`):
 
 	conda config --set channel_priority strict
 	conda env create -f environment.yml
@@ -68,9 +64,7 @@ Per chi invece usa `mamba` (comando analogo per `micromamba`):
 
 	mamba env create -f environment.yml --channel-priority strict
 
-:warning: Poiché questa repository potrebbe essere modificata mentre il corso è attivo, eseguite sempre `git pull` prima di iniziare a lavorare sugli esercizi e verificate che `environment.yml` non sia cambiato! In caso contrario, aggiornate il virtual environment.
-
-:warning: Se la versione della vostra libreria CUDA di sistema è relativamente recente, la creazione dell’environment potrebbe richiedere un po’ di tempo (1-5 minuti). Non disperate, basta aspettare.
+:warning: Se la versione della vostra libreria CUDA di sistema è relativamente recente, la creazione dell’environment potrebbe richiedere un po’ di tempo (1-5 minuti).
 
 **Step :three: - Testare l'installazione di GROMACS**. Attivate prima il virtual environment eseguendo (nel caso sostituire `conda` con `mamba` o `micromamba`):
 
