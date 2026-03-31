@@ -66,11 +66,11 @@ Per chi invece usa `mamba` (comando analogo per `micromamba`):
 
 :warning: Se la versione della vostra libreria CUDA di sistema è relativamente recente, la creazione dell’environment potrebbe richiedere un po’ di tempo (1-5 minuti).
 
-**Step :three: - Testare l'installazione di GROMACS**. Attivate prima il virtual environment eseguendo (nel caso sostituire `conda` con `mamba` o `micromamba`):
+**Step :three: - Testare l'installazione di GROMACS**. Attivare prima il virtual environment eseguendo (nel caso sostituire `conda` con `mamba` o `micromamba`):
 
 	conda activate aem-2026
 
-e poi eseguite: 
+e poi eseguire: 
 
 	gmx help mdrun
  
