@@ -70,7 +70,7 @@ Per chi invece usa `mamba` (comando analogo per `micromamba`):
 
 	conda activate aem-2026
 
-e poi eseguendo: 
+e poi eseguite: 
 
 	gmx help mdrun
  
