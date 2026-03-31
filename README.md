@@ -31,6 +31,12 @@ Avete due possibilità:
 
 ## Come creare il virtual environment
 
+**Step :zero: - Clonare la repository**, eseguendo:
+
+	git clone https://github.com/MicPellegrino/AEM-2026.git
+
+:yellow_circle: Per chi usa **oVirt** :yellow_circle: : No è possibile clonare da GitHub, avendo le VM accesso limitato ad internet. Troverete il contenuto della repository sul Portale della Didattica.
+
 **Step :one: - Installare un environment manager**:
 - Miniconda: https://www.anaconda.com/docs/getting-started/miniconda/install;
 - Mamba: https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html.
@@ -41,9 +47,9 @@ Esempio di installazione di Miniconda (testato su `wsl`):
 	./Miniconda3-latest-Linux-x86_64.sh
 	# Follow the instructions
 
-Da ora in poi farò riferimento a Miniconda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Da esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment. Tuttavia, se Miniconda è già installato sul vostro sistema, non è necessario installare altre versioni. Sconsiglio l'utilizzo di Anaconda.
+Da ora in poi farò riferimento a Miniconda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Per esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment. Tuttavia, se Miniconda è già installato sul vostro sistema, non è necessario installare altre versioni. Sconsiglio l'utilizzo di Anaconda.
 
-:yellow_circle: Per chi usa oVirt :yellow_circle: : trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM, basterà sostituire il comando per attivare l'environment con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:. Visto che le VM hanno accesso limitato a internet, non sarà possibile clonare questa repository GitHub. Troverete tutti i file necessari per gli esercizi sul Portale della Didattica.
+:yellow_circle: Per chi usa **oVirt** :yellow_circle: : trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM, basterà sostituire il comando per attivare l'environment con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
 
 :warning: Le istruzioni di installazione spiegano anche come configurare e attivare l'environment manager in modo automatico. Potreste dover aggiungere alcune righe al file `.bashrc` nella tua home directory per attivare automaticamente l'environment manager all’apertura di una nuova sessione di `bash`. Se usate Miniconda, questo dovrebbe avvenire automaticamente una volta eseguito per la prima volta: 
 
