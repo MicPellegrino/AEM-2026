@@ -103,10 +103,10 @@ In alternativa, potete aprire i file di configurazione da linea di comando (cio�
 ## Visualizzazione (facoltativo)
 
 Le traiettorie e le configurazioni sono visualizzate nei notebooks tramite widgets `nglview`. Esistono anche altre soluzioni (potenzialmente migliori) per visualizzare configurazioni molecolari _fuori dal notebook_:
-- VMD: https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD - gratis, richiede una registrazione con email istituzionale;
-- OVITO: https://www.ovito.org/manual/installation.html - ha una versione gratuita con funzionalità limitate e una versione commerciale completa (la versione gratuita è più che sufficiente, inoltre consente di usare l’intero API Python);
-- VEGA ZZ: https://www.ddl.unimi.it/cms/index.php?Software_projects:VEGA_ZZ:Download - richiede registrazione e codice di attivazione;
-- PyMOL: https://www.pymol.org/ - richiede registrazione e codice di attivazione.
+- **VMD**: https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD - gratis, richiede una registrazione con email istituzionale;
+- **OVITO**: https://www.ovito.org/manual/installation.html - ha una versione gratuita con funzionalità limitate e una versione commerciale completa (la versione gratuita è più che sufficiente, inoltre consente di usare l’intero API Python);
+- **VEGA ZZ**: https://www.ddl.unimi.it/cms/index.php?Software_projects:VEGA_ZZ:Download - richiede registrazione e codice di attivazione;
+- **PyMOL**: https://www.pymol.org/ - richiede registrazione e codice di attivazione.
 
 ## Software consigliato (facoltativo)
 
