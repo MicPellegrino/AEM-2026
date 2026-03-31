@@ -4,7 +4,7 @@
 
 - [Come ottenere una distribuzione di Linux](#come-ottenere-una-distribuzione-di-linux)
 - [Come creare il virtual environment](#come-creare-il-virtual-environment)
-- [Notebook per gli esercizi](#notebook-per-gli-esercizi)
+- [Notebook ed esercizi](#notebook-ed-esercizi)
 - [Visualizzazione (facoltativo)](#visualizzazione-facoltativo)
 - [Software consigliato (facoltativo)](#software-consigliato-facoltativo)
 - [Ringraziamenti](#ringraziamenti)
@@ -83,7 +83,7 @@ dalla linea di comando. La prima linea di output dovrebbe essere: `:-) GROMACS -
 
 :warning: Se il comando `gmx` non viene trovato oppure ottenete una versiona diversa da `2025.4-conda_forge`, significa che l’environment non è attivo oppure che la libreria (dependency) di GROMACS non è stata installata quando avete creato l'environment.
 
-## Notebook per gli esercizi
+## Notebook ed esercizi
 
 Spostatevi in una delle sotto-cartelle (ad esempio `cd molecular-dynamics/cnt`) e aprite il notebook corrispondente eseguendo:
 
@@ -97,7 +97,13 @@ e navigate/aprite il file che volete ispezionare/modificare.
 
 In alternativa, potete aprire i file di configurazione da linea di comando (cioè _fuori dal notebook_) usando il vostro editor di testo preferito, come `vim`, `code`, `emacs`, etc...
 
-**[DESCRIZIONE]**
+### Contenuto
+
+- `intro-python`: Contiene un notebook di ripasso sugli aspetti fondamentali di Python;
+- `molecular-dynamics`: Contiene gli esercizi di Dinamica Molecolare,
+  - `cnt`: Il primo esercizio introduce le basi della Dinamica Molecolare (creazione di file di configurazione, algoritmi, campi di forza, topologie, termalizzazione e post-processing). L’obiettivo è valutare la conducibilità termica di un nanotubo di carbonio usando un metodo di non-equilibrio. Zero to hero!
+  - `zeolite`: Il secondo esercizio introduce la solvatazione e ai modelli dell’acqua. Vi verrà chiesto di simulare una matrice di zeolite a diversi livelli di idratazione per studiarne le proprietà di accumulo di energia. Inoltre, calcolerete il coefficiente di auto-diffusione dell’acqua, un osservabile "tipico" dalla Dinamica Molecolare.
+- `machine-learning`: coming soon...
 
 ## Visualizzazione (facoltativo)
 
