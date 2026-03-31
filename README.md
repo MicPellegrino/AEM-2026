@@ -94,7 +94,7 @@ In alternativa, potete aprire i file di configurazione da linea di comando (cio�
 
 ### Contenuto
 
-- `intro-python`: Contiene un notebook di ripasso sugli aspetti fondamentali di Python.
+- `intro-python`: Contiene un notebook di ripasso su alcuni aspetti fondamentali di Python, NumPy e Jupyter Notebook.
 - `molecular-dynamics`: Contiene gli esercizi di Dinamica Molecolare;
   - `cnt`: Il primo esercizio introduce le basi della Dinamica Molecolare (creazione di file di configurazione, algoritmi, campi di forza, topologie, termalizzazione e post-processing). L’obiettivo è valutare la conducibilità termica di un nanotubo di carbonio usando un metodo di non-equilibrio. Zero to hero!
   - `zeolite`: Il secondo esercizio introduce la solvatazione e ai modelli dell’acqua. Vi verrà chiesto di simulare una matrice di zeolite a diversi livelli di idratazione per studiarne le proprietà di accumulo di energia. Inoltre, calcolerete il coefficiente di auto-diffusione dell’acqua, un osservabile "tipico" dalla Dinamica Molecolare.
