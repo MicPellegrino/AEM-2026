@@ -110,10 +110,10 @@ Le traiettorie e le configurazioni sono visualizzate nei notebooks tramite widge
 
 ## Software consigliato (facoltativo)
 
-- **VMD** :film_projector: - vedi sopra;
-- **Grace** :bar_chart: - un software di plotting molto leggero, molto "GROMACS-friendly" (https://plasma-gate.weizmann.ac.il/Grace/);
-- **Visual Studio Code** :computer: - GUI per editing e programmazione, molto versatile (https://code.visualstudio.com/download);
-- **MATLAB** :triangular_ruler: - gli script di post-processing in `molecular-dynamics` sono disponibili anche in formato leggibile da MATLAB.
+- :film_projector: **VMD** - vedi sopra;
+- :bar_chart: **Grace** - un software di plotting molto leggero, molto "GROMACS-friendly" (https://plasma-gate.weizmann.ac.il/Grace/);
+- :computer: **Visual Studio Code** - GUI per editing e programmazione, molto versatile (https://code.visualstudio.com/download);
+- :triangular_ruler: **MATLAB** - gli script di post-processing in `molecular-dynamics` sono disponibili anche in formato leggibile da MATLAB.
 
 ## Ringraziamenti
 
