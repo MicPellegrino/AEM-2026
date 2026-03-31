@@ -49,9 +49,9 @@ Esempio di installazione di Miniconda (testato su `wsl`):
 
 Da ora in poi farò riferimento a Miniconda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Per esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment. Tuttavia, se Miniconda è già installato sul vostro sistema, non è necessario installare altre versioni. Sconsiglio l'utilizzo di Anaconda.
 
-:yellow_circle: Per chi usa **oVirt** :yellow_circle: : trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM, basterà sostituire il comando per attivare l'environment con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
+:yellow_circle: Per chi usa **oVirt** :yellow_circle: : Trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM. Basterà sostituire il comando per attivare l'environment con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
 
-:warning: Le istruzioni di installazione spiegano anche come configurare e attivare l'environment manager in modo automatico. Potreste dover aggiungere alcune righe al file `.bashrc` nella tua home directory per attivare automaticamente l'environment manager all’apertura di una nuova sessione di `bash`. Se usate Miniconda, questo dovrebbe avvenire automaticamente una volta eseguito per la prima volta: 
+:warning: Le istruzioni di installazione spiegano anche come configurare e attivare l'environment manager in modo automatico. Potreste dover aggiungere alcune righe al file `.bashrc` presente nella vostra home directory per attivare automaticamente l'environment manager all’apertura di una nuova sessione di `bash`. Se usate Miniconda, questo dovrebbe avvenire automaticamente una volta eseguito per la prima volta: 
 
 	conda init
 
