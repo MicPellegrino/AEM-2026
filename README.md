@@ -35,7 +35,7 @@ Avete due possibilità:
 
 	git clone https://github.com/MicPellegrino/AEM-2026.git
 
-:yellow_circle: Per chi usa **oVirt** :yellow_circle: : Non è possibile clonare da GitHub, avendo le VM accesso limitato ad internet. Troverete il contenuto della repository sul Portale della Didattica.
+:yellow_circle: Per chi usa **oVirt** :yellow_circle: : È possibile clonare da GitHub, tuttavia le VM accesso limitato ad internet (i.e. oltre a GitHub, non sarà possibile accedere a nessun URL fuori dal dominio di PoliTo). Nel caso non riusciste a scaricare/clonare da GitHub, trovate comunque il contenuto della repository sulla pagina del corso sul Portale della Didattica.
 
 **Step :one: - Installare un environment manager**:
 - Miniconda: https://www.anaconda.com/docs/getting-started/miniconda/install;
@@ -49,7 +49,7 @@ Esempio di installazione di Miniconda (testato su `wsl`):
 
 Da ora in poi farò riferimento a Miniconda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Per esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment. Tuttavia, se Miniconda è già installato sul vostro sistema, non è necessario installare altre versioni. Sconsiglio l'utilizzo di Anaconda.
 
-:yellow_circle: Per chi usa **oVirt** :yellow_circle: : Trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM. Basterà sostituire il comando per attivare l'environment con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
+:yellow_circle: Per chi usa **oVirt** :yellow_circle: : Trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM (in `/home/labmd/bin`). Basterà sostituire il comando per attivare l'environment con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
 
 :warning: Le istruzioni di installazione spiegano anche come configurare e attivare l'environment manager in modo automatico. Potreste dover aggiungere alcune righe al file `.bashrc` presente nella vostra home directory per attivare automaticamente l'environment manager all’apertura di una nuova sessione di `bash`. Se usate Miniconda, questo dovrebbe avvenire automaticamente una volta eseguito: 
 
