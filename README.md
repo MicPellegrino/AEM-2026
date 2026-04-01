@@ -25,9 +25,9 @@ L'environment e i notebook sono stati testati su distribuzioni recenti di macOS 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Logo_%281992-2001%29.svg" width="50">
 Avete due possibilità:
 
-- :green_circle: Scelta consigliata :green_circle: : attivare e usare **Windows Subsystem for Linux (WSL)**. Trovate le istruzioni per l'installazione qui: https://learn.microsoft.com/en-us/windows/wsl/install. Una volta installato, per attivarlo basterà aprire PowerShell ed eseguire `wsl` da linea di comando; questo dovrebbe aprire una sessione `bash` Linux. Assicuratevi di essere nella vostra `home` directory (i.e. **non** `mnt`), nel caso eseguite semplicemente `cd` sulla linea di comando per spostarvi nella `home`. 
+- :green_circle: Scelta consigliata :green_circle: : Attivare e usare **Windows Subsystem for Linux (WSL)**. Trovate le istruzioni per l'installazione qui: https://learn.microsoft.com/en-us/windows/wsl/install. Una volta installato, per attivarlo basterà aprire PowerShell ed eseguire `wsl` da linea di comando; questo dovrebbe aprire una sessione `bash` Linux. Assicuratevi di essere nella vostra `home` directory (i.e. **non** `mnt`), nel caso eseguite semplicemente `cd` sulla linea di comando per spostarvi nella `home`. 
 
-- :yellow_circle: Piano B :yellow_circle: : usare una Virtal Machine (VM) tramite **oVirt**. Trovate le istruzioni per accedere alle VM e caricare/scaricare dati a questo link: https://webdoc.laib.polito.it/index.php/5-procedure-operative/17-4-12-supporto-specifico-ai-corsi/150-vdi-linux-new-2
+- :yellow_circle: Piano B :yellow_circle: : Usare una Virtal Machine (VM) tramite **oVirt**. Trovate le istruzioni per accedere alle VM e caricare/scaricare dati a questo link: https://webdoc.laib.polito.it/index.php/5-procedure-operative/17-4-12-supporto-specifico-ai-corsi/150-vdi-linux-new-2
 
 ## Come creare il virtual environment
 
@@ -35,7 +35,7 @@ Avete due possibilità:
 
 	git clone https://github.com/MicPellegrino/AEM-2026.git
 
-:yellow_circle: Per chi usa **oVirt** :yellow_circle: : No è possibile clonare da GitHub, avendo le VM accesso limitato ad internet. Troverete il contenuto della repository sul Portale della Didattica.
+:yellow_circle: Per chi usa **oVirt** :yellow_circle: : Non è possibile clonare da GitHub, avendo le VM accesso limitato ad internet. Troverete il contenuto della repository sul Portale della Didattica.
 
 **Step :one: - Installare un environment manager**:
 - Miniconda: https://www.anaconda.com/docs/getting-started/miniconda/install;
