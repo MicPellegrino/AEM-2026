@@ -10,7 +10,7 @@ Contrariamente a quanto viene spesso detto, "mischiare" `pip` e `conda` non è i
 
 ## PyTorch
 
-**Dopo** aver attivato il l'environment virtuale tramite Conda/Mamba, scaricate la versione di `torch` adatta per il vostro sistema.
+**Dopo** aver attivato il l'environment virtuale tramite Conda/Mamba, scaricate la versione di `torch` adatta al vostro sistema e al vostro hardware.
 
 ### GPU
 
