@@ -1,12 +1,12 @@
 ### Installare le librerie per ML/NNPs
 
-Alcune librerie necessarie per gli esercizi su Machine Learning e Neural Netweork Potentials non sono ottenibili tramite `conda`/`mamba`. Nei notebooks troverete i comandi `pip` per installare queste librerie all'occorrenza. 
+Alcune delle librerie necessarie per gli esercizi su Machine Learning e Neural Network Potentials non sono ottenibili tramite `conda`/`mamba`. Nei notebooks troverete i comandi `pip` per installare queste librerie all'occorrenza. 
 
 Contrariamente a quanto viene spesso detto, "mischiare" `pip` e `conda` non è in generale sbagliato. In questo caso è necessario.
 
-:yellow_circle: Se usate **oVirt** :yellow_circle: : _Tutte_ le librerie sono _già state installate_, quindi non dovete fare nulla.
+:yellow_circle: Se usate **oVirt** :yellow_circle: : _Tutte_ le librerie sono _già state installate_, quindi non dovete fare nulla. **Non** cambiate o rimuovete l'environment! Senza accesso ad internet è praticamente impossibile ri-crearlo.
 
-:green_circle: Per tutti gli altri :green_circle: : Se volete portarvi avanti, potete già installare `torch` e `mace`.
+:green_circle: Per tutti gli altri studenti :green_circle: : Se volete portarvi avanti, potete già installare `torch` e `mace`.
 
 ## PyTorch
 
