@@ -103,14 +103,14 @@ In alternativa, potete aprire i file di configurazione da linea di comando (cio�
 - `intro-python`: Contiene un notebook di ripasso su alcuni aspetti fondamentali di Python, NumPy e Jupyter Notebook.
 - `molecular-dynamics`: Contiene gli esercizi di Dinamica Molecolare;
   - `cnt`: Il primo esercizio introduce le basi della Dinamica Molecolare (creazione di file di configurazione, algoritmi, campi di forza, topologie, termalizzazione e post-processing). L’obiettivo è valutare la conducibilità termica di un nanotubo di carbonio usando un metodo di non-equilibrio. Zero to hero!
-  - `zeolite`: Il secondo esercizio introduce la solvatazione e ai modelli dell’acqua. Vi verrà chiesto di simulare una matrice di zeolite a diversi livelli di idratazione per studiarne le proprietà di accumulo di energia. Inoltre, calcolerete il coefficiente di auto-diffusione dell’acqua, un osservabile "tipico" dalla Dinamica Molecolare.
+  - `zeolite`: Il secondo esercizio introduce la solvatazione e i modelli dell’acqua. Vi verrà chiesto di simulare una matrice di zeolite a diversi livelli di idratazione per studiarne le proprietà di accumulo di energia. Inoltre, calcolerete il coefficiente di auto-diffusione dell’acqua, un osservabile "tipico" dalla Dinamica Molecolare.
 - `machine-learning`: coming soon...
 
 ## Visualizzazione (facoltativo)
 
-Le traiettorie e le configurazioni sono visualizzate nei notebooks tramite widgets `nglview`. Esistono anche altre soluzioni (potenzialmente migliori) per visualizzare configurazioni molecolari _fuori dal notebook_:
+Le traiettorie e le configurazioni sono visualizzate nei notebooks tramite widgets `nglview`. Esistono altri modi (potenzialmente migliori) per visualizzare configurazioni molecolari usando software dedicato, _fuori dal notebook_:
 - **VMD**: https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD - gratis, richiede una registrazione con email istituzionale;
-- **OVITO**: https://www.ovito.org/manual/installation.html - ha una versione gratuita con funzionalità limitate e una versione commerciale completa (la versione gratuita è più che sufficiente, inoltre consente di usare l’intero API Python);
+- **OVITO**: https://www.ovito.org/manual/installation.html - ha una versione gratuita con funzionalità limitate e una versione commerciale completa (la versione gratuita è più che sufficiente, inoltre consente di usare l’intero API Python per fare post-processing);
 - **VEGA ZZ**: https://www.ddl.unimi.it/cms/index.php?Software_projects:VEGA_ZZ:Download - richiede registrazione e codice di attivazione;
 - **PyMOL**: https://www.pymol.org/ - richiede registrazione e codice di attivazione.
 
@@ -123,7 +123,7 @@ Le traiettorie e le configurazioni sono visualizzate nei notebooks tramite widge
 
 ## Ringraziamenti
 
-Messo a disposizione per gli studenti del corso "Applicazioni Energetiche dei Materiali" dal multi-Scale ModeLing Laboratory (SMaLL) del Politecnico di Torino (Torino, Italia). Queste risorse sono destinate a scopi didattici e sono state progettate per corsi di laurea magistrale e di dottorato del Politecnico di Torino (2023-2026).
+I codici sono messi a disposizione degli studenti del corso "Applicazioni Energetiche dei Materiali", e sono sviluppati e mantenuti dal **multi-Scale ModeLing Laboratory (SMaLL)** del Politecnico di Torino (Torino, Italia). Queste risorse sono destinate a scopi didattici e sono state progettate per corsi di laurea magistrale e di dottorato del Politecnico di Torino (2023-2026). La struttura dei notebook è ispirata ai tutorial ufficiali di GROMACS: https://tutorials.gromacs.org/
 
 Autori:
 - Matteo Fasano (matteo.fasano@polito.it)
