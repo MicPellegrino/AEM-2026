@@ -47,7 +47,7 @@ Mamba: https://mamba.readthedocs.io/en/latest/installation/mamba-installation.ht
 
 Esempio di installazione di Miniconda (testato su `wsl`):
 
-	# Su bash (i.e. NON PowerShell o prompt dei comandi), esegui:
+	# Una volta attivato wsl, esegui su bash (i.e. NON PowerShell o prompt dei comandi):
 	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 	./Miniconda3-latest-Linux-x86_64.sh
 	# e segui le istruzioni a schermo...
