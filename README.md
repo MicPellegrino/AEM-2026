@@ -45,12 +45,13 @@ Miniconda: https://www.anaconda.com/docs/getting-started/miniconda/install
 
 Mamba: https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html
 
-Esempio di installazione di Miniconda (testato su `wsl`):
+Esempio di installazione di Miniconda da linea di comando `bash` (testato su `wsl`):
 
-	# Una volta attivato wsl, esegui su bash (i.e. NON PowerShell o prompt dei comandi):
+	# Scaricate lo script di installazione:
 	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-	./Miniconda3-latest-Linux-x86_64.sh
-	# e segui le istruzioni a schermo...
+	# eseguitelo senza root privileges:
+	bash Miniconda3-latest-Linux-x86_64.sh
+	# ... e seguite le istruzioni a schermo.
 
 Da ora in poi farò riferimento a Miniconda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Per esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment. Tuttavia, se Miniconda è già installato sul vostro sistema, non è necessario installare altre versioni.
 
