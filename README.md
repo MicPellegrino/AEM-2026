@@ -38,16 +38,21 @@ Avete due possibilità:
 :yellow_circle: Per chi usa **oVirt** :yellow_circle: : È possibile clonare da GitHub, tuttavia le VM hanno accesso limitato ad internet (i.e. oltre GitHub, non sarà possibile accedere ad alcun URL fuori dal dominio di PoliTo). Nel caso non riusciste a scaricare/clonare da GitHub, trovate comunque il contenuto della repository sulla pagina del corso sul Portale della Didattica.
 
 **Step :one: - Installare un environment manager**:
-- Miniconda: https://www.anaconda.com/docs/getting-started/miniconda/install;
-- Mamba: https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html.
+
+Miniconda: https://www.anaconda.com/docs/getting-started/miniconda/install
+
+**Oppure:**
+
+Mamba: https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html
 
 Esempio di installazione di Miniconda (testato su `wsl`):
 
+	# Su bash (i.e. NON PowerShell o prompt dei comandi), esegui:
 	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 	./Miniconda3-latest-Linux-x86_64.sh
-	# Segui le istruzioni a schermo...
+	# e segui le istruzioni a schermo...
 
-Da ora in poi farò riferimento a Miniconda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Per esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment. Tuttavia, se Miniconda è già installato sul vostro sistema, non è necessario installare altre versioni. Sconsiglio l'utilizzo di Anaconda.
+Da ora in poi farò riferimento a Miniconda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Per esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment. Tuttavia, se Miniconda è già installato sul vostro sistema, non è necessario installare altre versioni.
 
 :yellow_circle: Per chi usa **oVirt** :yellow_circle: : Trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM (in `/home/labmd/bin`). Basterà sostituire il comando per attivare l'environment con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
 
