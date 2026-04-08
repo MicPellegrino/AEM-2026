@@ -39,11 +39,7 @@ Avete due possibilità:
 
 **Step :one: - Installare un environment manager**:
 
-Miniconda: https://www.anaconda.com/docs/getting-started/miniconda/install
-
-**Oppure:**
-
-Mamba: https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html
+**Miniconda**: [https://www.anaconda.com/docs/getting-started/miniconda/install](https://www.anaconda.com/docs/getting-started/miniconda/install/linux-install)
 
 Esempio di installazione di Miniconda da linea di comando `bash` (testato su `wsl`):
 
@@ -53,9 +49,9 @@ Esempio di installazione di Miniconda da linea di comando `bash` (testato su `ws
 	bash Miniconda3-latest-Linux-x86_64.sh
 	# ... e seguite le istruzioni a schermo.
 
-Da ora in poi farò riferimento a Miniconda, ma tenete presente che qualsiasi variante dovrebbe funzionare in modo analogo. Per esperienza personale, Mamba è decisamente più veloce nella creazione e gestione degli environment. Tuttavia, se Miniconda è già installato sul vostro sistema, non è necessario installare altre versioni.
+Da ora in poi farò riferimento a Miniconda, tenete presente che "varianti" alternative dovrebbero funzionare in modo analogo (e.g. [Mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html)).
 
-:yellow_circle: Per chi usa **oVirt** :yellow_circle: : Trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM (in `/home/labmd/bin`). Basterà sostituire il comando per attivare l'environment con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
+:yellow_circle: Per chi usa **oVirt** :yellow_circle: : Trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM (in `/home/labmd/bin`). Basterà sostituire il comando `conda` con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
 
 :warning: Le istruzioni di installazione spiegano anche come configurare e attivare l'environment manager in modo automatico. Potreste dover aggiungere alcune righe al file `.bashrc` presente nella vostra home directory per attivare automaticamente l'environment manager all’apertura di una nuova sessione di `bash`. Se usate Miniconda, questo dovrebbe avvenire automaticamente una volta eseguito: 
 
@@ -78,7 +74,7 @@ Per chi invece usa `mamba` (comando analogo per `micromamba`):
 
 :warning: Se la versione della vostra libreria CUDA di sistema è relativamente recente, la creazione dell’environment potrebbe richiedere un po’ di tempo (1-5 minuti).
 
-**Step :three: - Testare l'installazione di GROMACS**. Attivate il virtual environment eseguendo (nel caso sostituire `conda` con `mamba` o `micromamba`):
+**Step :three: - Testare l'installazione di GROMACS**. Attivate il virtual environment eseguendo (nel caso sostituite `conda` con `mamba` o `micromamba`):
 
 	conda activate aem-2026
 
