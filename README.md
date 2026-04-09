@@ -93,6 +93,8 @@ Spostatevi in una delle sotto-cartelle (ad esempio `cd molecular-dynamics/cnt`) 
 
 	jupyter-notebook <nome-del-notebook>.ipynb
 
+Nel caso il notebook non venga aperto automaticamente, copiate il link che appare su terminale ('token') sul vostro browser preferito (e.g. Google Chrome).
+
 Ora potete eseguire il notebook cella per cella. Negli esercizi, potreste dover ispezionare o modificare i file di configurazione delle simulazioni; in tal caso, aprite Jupyter Notebook nella cartella corrispondente, semplicemente eseguendo:
 
 	jupyter-notebook
