@@ -58,11 +58,11 @@ Da ora in poi farò riferimento a Miniconda, tenete presente che "varianti" alte
 
 	conda init
 
-se invece usate Mamba, potreste dover aggiungere queste righe al file `.bashrc`:
+se invece usate Mamba, potreste dover aggiungere queste righe al file `.bashrc`, ad esempio:
 
 	# Apri .bashrc col tuo editor di testo preferito...
-	export MAMBA_EXE='<directory-dove-hai-installato-mamba>/mambaforge/bin/mamba';
-	export MAMBA_ROOT_PREFIX='<directory-dove-hai-installato-mamba>/mambaforge';
+	export MAMBA_EXE='<directory-dove-hai-installato-mamba>/miniforge3/bin/mamba';
+	export MAMBA_ROOT_PREFIX='<directory-dove-hai-installato-mamba>/miniforge3';
 
 **Step :two: - Creare il virtual environment** eseguendo:
 
