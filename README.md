@@ -35,6 +35,10 @@ Avete due possibilità:
 
 	git clone https://github.com/MicPellegrino/AEM-2026.git
 
+Spostatevi poi nella cartella della repository:
+
+	cd AEM-2026
+
 :yellow_circle: Per chi usa **oVirt** :yellow_circle: : È possibile clonare da GitHub, tuttavia le VM hanno accesso limitato ad internet (i.e. oltre GitHub, non sarà possibile accedere ad alcun URL fuori dal dominio di PoliTo). Nel caso non riusciste a scaricare/clonare da GitHub, trovate comunque il contenuto della repository sulla pagina del corso sul Portale della Didattica.
 
 **Step :one: - Installare un environment manager**:
