@@ -45,10 +45,12 @@ Spostatevi poi nella cartella della repository:
 
 **Miniconda**: [https://www.anaconda.com/docs/getting-started/miniconda/install](https://www.anaconda.com/docs/getting-started/miniconda/install/linux-install)
 
-Esempio di installazione di Miniconda da linea di comando `bash` (testato su `wsl`):
+Esempio di installazione di Miniconda da linea di comando `bash` per `wsl`:
 - Scaricate lo script di installazione: `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`;
 - Eseguitelo senza root privileges: `bash Miniconda3-latest-Linux-x86_64.sh`;
 - Seguite le istruzioni a terminale.
+
+Per gli utenti macOS: scaricate la versione per macOS ([Miniconda3-latest-MacOSX-arm64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh)).
 
 Da ora in poi farò riferimento a Miniconda, tenete presente che "varianti" alternative dovrebbero funzionare in modo analogo (e.g. [Mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html)).
 
