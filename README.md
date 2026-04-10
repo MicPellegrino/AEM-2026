@@ -27,7 +27,7 @@ Avete due possibilità:
 
 - :green_circle: Scelta consigliata :green_circle: : Attivare e usare **Windows Subsystem for Linux (WSL)** sul vostro laptop. Trovate le istruzioni per l'installazione qui: https://learn.microsoft.com/en-us/windows/wsl/install. Una volta installato, per attivarlo basterà aprire PowerShell ed eseguire `wsl` da linea di comando; dovrebbe aprirsi una sessione `bash` Linux. Assicuratevi di essere nella vostra `home` directory (i.e. **non** `mnt`), nel caso eseguite semplicemente `cd` sulla linea di comando per spostarvi nella `home`. 
 
-- :yellow_circle: Piano B :yellow_circle: : Usare una Virtal Machine (VM) remota tramite **oVirt**. Trovate le istruzioni per accedere alle VM e caricare/scaricare dati a questo link: https://webdoc.laib.polito.it/index.php/5-procedure-operative/17-4-12-supporto-specifico-ai-corsi/150-vdi-linux-new-2
+- :yellow_circle: Piano B :yellow_circle: : Usare una Virtal Machine (VM) remota tramite **oVirt**. Trovate le istruzioni per accedere alle VM e caricare/scaricare dati a questo link (accessibile da rete PoliTo): https://webdoc.laib.polito.it/index.php/5-procedure-operative/17-4-12-supporto-specifico-ai-corsi/150-vdi-linux-new-2
 
 ## Come creare il virtual environment
 
@@ -50,7 +50,7 @@ Esempio di installazione di Miniconda da linea di comando `bash` per `wsl`:
 - Eseguitelo senza root privileges: `bash Miniconda3-latest-Linux-x86_64.sh`;
 - Seguite le istruzioni a terminale.
 
-Per gli utenti macOS: scaricate la versione per macOS ([Miniconda3-latest-MacOSX-arm64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh)).
+Per gli utenti macOS: scaricate invece la versione per macOS ([Miniconda3-latest-MacOSX-arm64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh)).
 
 Da ora in poi farò riferimento a Miniconda, tenete presente che "varianti" alternative dovrebbero funzionare in modo analogo (e.g. [Mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html)).
 
