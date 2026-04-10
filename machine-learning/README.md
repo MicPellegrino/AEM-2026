@@ -44,6 +44,7 @@ pip3 install mace-torch cuequivariance
 
 Aprite Python da linea di comando ed eseguite:
 ```
+import numpy as np
 import torch
 import mace
 torch.cuda.is_available()
