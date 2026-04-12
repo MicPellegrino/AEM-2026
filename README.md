@@ -14,12 +14,12 @@
 ### Utenti Linux (Ubuntu, Debian, Fedora, ...)
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" width="50">
 
-Potete saltare questa sezione.
+Potete saltare questa sezione; assicuratevi semplicemente che `git` sia installato (e nel caso installatelo).
 
 ### Utenti macOS
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Finder_icon_macOS_Yosemite.png" width="50">
 
-L'environment e i notebook sono stati testati su distribuzioni recenti di macOS e architettura Apple M4, quindi non _dovrebbero_ esserci problemi. Anche voi potete saltare questa sezione.
+L'environment e i notebook sono stati testati su distribuzioni recenti di macOS e architettura Apple M4, quindi non _dovrebbero_ esserci problemi. Anche voi potete saltare questa sezione. Anche per voi: assicuratevi semplicemente che `git` sia installato (e nel caso installatelo).
 
 ### Utenti Windows
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Logo_%281992-2001%29.svg" width="50">
@@ -56,15 +56,7 @@ Da ora in poi farò riferimento a Miniconda, tenete presente che "varianti" alte
 
 :yellow_circle: Per chi usa **oVirt** :yellow_circle: : Trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM (in `/home/labmd/bin`). Basterà sostituire il comando `conda` con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
 
-:warning: Le istruzioni di installazione spiegano anche come configurare e attivare l'environment manager in modo automatico. Potreste dover aggiungere alcune righe al file `.bashrc` presente nella vostra home directory per attivare automaticamente l'environment manager all’apertura di una nuova sessione di `bash`. Se usate Miniconda, questo dovrebbe avvenire automaticamente una volta eseguito: 
-
-	conda init
-
-se invece usate Mamba, potreste dover aggiungere queste righe al file `.bashrc`, ad esempio:
-
-	# Apri .bashrc col tuo editor di testo preferito...
-	export MAMBA_EXE='$HOME/miniforge3/bin/mamba';
-	export MAMBA_ROOT_PREFIX='$HOME/miniforge3';
+:warning: Le istruzioni di installazione spiegano anche come configurare e inizializzare l'environment manager in modo automatico. Potreste dover aggiungere alcune righe al file `.bashrc` presente nella vostra home directory per attivare automaticamente l'environment manager all’apertura di una nuova sessione di `bash`.
 
 **Step :two: - Creare il virtual environment** eseguendo:
 
