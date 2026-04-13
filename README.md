@@ -83,7 +83,7 @@ dalla linea di comando. La prima linea di output dovrebbe essere: `:-) GROMACS -
 
 ## Notebook ed esercizi
 
-Spostatevi in una delle sotto-cartelle (ad esempio `cd molecular-dynamics/cnt`) e aprite il notebook corrispondente eseguendo:
+Dalla cartella della repository (`AEM-2026`), spostatevi in una delle sotto-cartelle (ad esempio `cd molecular-dynamics/cnt`) e aprite il notebook corrispondente eseguendo:
 
 	jupyter-notebook <nome-del-notebook>.ipynb
 
