@@ -122,7 +122,7 @@ Le traiettorie e le configurazioni sono visualizzate nei notebooks tramite widge
 
 ## Ringraziamenti
 
-I codici sono messi a disposizione degli studenti del corso "Applicazioni Energetiche dei Materiali", e sono sviluppati e mantenuti dal **multi-Scale ModeLing Laboratory (SMaLL)** del Politecnico di Torino (Torino, Italia). Queste risorse sono destinate a scopi didattici e sono state progettate per corsi di laurea magistrale e di dottorato del Politecnico di Torino (2023-2026). La struttura dei notebook è ispirata ai tutorial ufficiali di GROMACS: https://tutorials.gromacs.org/
+I codici vengono messi a disposizione degli studenti del corso "Applicazioni Energetiche dei Materiali", e sono sviluppati e mantenuti dal **multi-Scale ModeLing Laboratory (SMaLL)** del Politecnico di Torino (Torino, Italia). Queste risorse sono destinate a scopi didattici e sono state progettate per corsi di laurea magistrale e di dottorato del Politecnico di Torino (2023-2026). La struttura dei notebook è ispirata ai tutorial ufficiali di GROMACS: https://tutorials.gromacs.org/
 
 Autori:
 - Matteo Fasano (matteo.fasano@polito.it)
