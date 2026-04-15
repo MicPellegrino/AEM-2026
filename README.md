@@ -93,7 +93,9 @@ Eseguite poi:
 
 	gmx help mdrun
  
-dalla linea di comando. La prima linea di output dovrebbe essere: `:-) GROMACS - gmx help, 2025.4-conda_forge (-:`.
+dalla linea di comando. La prima linea di output dovrebbe essere: 
+
+	:-) GROMACS - gmx help, 2025.4-conda_forge (-:
 
 :warning: Se il comando `gmx` non viene trovato oppure ottenete una versiona diversa da `2025.4-conda_forge`, significa che l’environment non è attivo oppure che la libreria (dependency) di GROMACS non è stata installata quando avete creato l'environment.
 
@@ -125,7 +127,7 @@ In alternativa, potete aprire i file di configurazione da linea di comando (cio�
 
 Potete installare programmi utili per i laboratori da linea di comando **bash** via `sudo apt-get` (è l'unica volta che userete `sudo`!). Innanzitutto assicuratevi che `apt-get` sia "up-to-date" eseguendo:
 
-	sudo `apt-get` update
+	sudo apt-get update
 
 :minidisc: **WSLU** aggiunge alcune utility di integrazione Windows/WSL (come ad esempio l'apertura automatica di Jupyter Notebook su browser):
 
