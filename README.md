@@ -53,6 +53,8 @@ e scaricate gli aggiornamenti dalla repository remota:
 
 	git pull
 
+È bene eseguire questa sequenza di comandi all'inizio dei laboratori. **Una volta creato il virtual environment la prima volta, non è necessario ri-crearlo ogni volta che viene aggiornata la repository!**
+
 **Step :one: - Installare un environment manager**:
 
 **Miniconda**: [https://www.anaconda.com/docs/getting-started/miniconda/install](https://www.anaconda.com/docs/getting-started/miniconda/install/linux-install)
