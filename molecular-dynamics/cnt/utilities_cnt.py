@@ -1,13 +1,13 @@
 import numpy as np
 
-def make_index(IV, IN, GN) :
+def make_index(IV, NA, GN) :
 
     """
         This routine prints to screen the content of the *.ndx file to be used in the
         Nose-Hoover md simulation. 
         
         IV ("Initial value") = label (integer) of the first group. 
-        IN ("Interval") = the number of atoms in each group. 
+        NA ("Number of atoms") = total number of atoms. 
         GN ("Number of groups") = the total number of groups to be created.
 
         After running, copy-paste what is printed on the output (either shell or 
@@ -15,7 +15,11 @@ def make_index(IV, IN, GN) :
     """
 
     N = 1
-    while N <= GN:
+
+    # Number of atoms in each group
+    IN = NA//GN
+
+    while N <= (GN-1):
 
         # Header (group name)
         print(f"[ INT{N} ]")
@@ -29,6 +33,14 @@ def make_index(IV, IN, GN) :
         # Update counters
         IV += IN
         N += 1
+
+    # Special case: the last group contains the reminder of atoms 
+    # (in case the numer of atoms is not divisible by the number of groups)
+    print(f"[ INT{N} ]")
+    output = ""
+    for i in range(IV, NA+1):
+        output += f"{i:3d}  "
+    print(output)
 
 
 def make_nose_hoover(GN, NN, TI, TF, tau):
