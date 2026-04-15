@@ -5,8 +5,9 @@
 - [Come ottenere una distribuzione di Linux](#come-ottenere-una-distribuzione-di-linux)
 - [Come creare il virtual environment](#come-creare-il-virtual-environment)
 - [Notebook ed esercizi](#notebook-ed-esercizi)
+- [Software consigliato](#software-consigliato)
+- [Ulteriore software (facoltativo)](#ulteriore-software-facoltativo)
 - [Visualizzazione (facoltativo)](#visualizzazione-facoltativo)
-- [Software consigliato (facoltativo)](#software-consigliato-facoltativo)
 - [Ringraziamenti](#ringraziamenti)
 
 ## Come ottenere una distribuzione di Linux
@@ -14,12 +15,12 @@
 ### Utenti Linux (Ubuntu, Debian, Fedora, ...)
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" width="50">
 
-Potete saltare questa sezione; assicuratevi semplicemente che `git` sia installato (e nel caso installatelo).
+Potete saltare questa sezione. Se usate Fedora o Debian, assicuratevi che `git` sia installato (e nel caso installatelo).
 
 ### Utenti macOS
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Finder_icon_macOS_Yosemite.png" width="50">
 
-L'environment e i notebook sono stati testati su distribuzioni recenti di macOS e architettura Apple M4, quindi non _dovrebbero_ esserci problemi. Anche voi potete saltare questa sezione. Anche per voi: assicuratevi semplicemente che `git` sia installato (e nel caso installatelo).
+L'environment e i notebook sono stati testati su distribuzioni recenti di macOS e architettura Apple M4, quindi non _dovrebbero_ esserci problemi. Anche voi potete saltare questa sezione. Assicuratevi semplicemente che `git` sia installato (e nel caso installatelo).
 
 ### Utenti Windows
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Logo_%281992-2001%29.svg" width="50">
@@ -39,9 +40,9 @@ Spostatevi poi nella cartella della repository:
 
 	cd AEM-2026
 
-:yellow_circle: Per chi usa **oVirt** :yellow_circle: : È possibile clonare da GitHub, tuttavia le VM hanno accesso limitato ad internet (i.e. oltre GitHub, non sarà possibile accedere ad alcun URL fuori dal dominio di PoliTo). Nel caso non riusciste a scaricare/clonare da GitHub, trovate comunque il contenuto della repository sulla pagina del corso sul Portale della Didattica.
+:yellow_circle: Per chi usa oVirt :yellow_circle: : È possibile clonare da GitHub, tuttavia le VM hanno accesso limitato ad internet (i.e. oltre GitHub, non sarà possibile accedere ad alcun URL fuori dal dominio di PoliTo). Nel caso non riusciste a scaricare/clonare da GitHub, trovate comunque il contenuto della repository sulla pagina del corso sul Portale della Didattica.
 
-:warning: Questa repository subirà modifiche durante il corso. Per assicurarvi di essere sempre aggiornati, copiate i notebooks che non volete perdere:
+:warning: Questa repository subirà modifiche durante il corso. Per assicurarvi di essere sempre aggiornati, copiate i notebook che non volete perdere, ad esempio:
 
 	# Opzionale: i files generati dalle simulazioni molecolari non vengono persi!
 	cp <nome-del-notebook>.ipynb <nome-del-notebook>-backup.ipynb
@@ -60,16 +61,16 @@ e scaricate gli aggiornamenti dalla repository remota:
 
 **Miniconda**: [https://www.anaconda.com/docs/getting-started/miniconda/install](https://www.anaconda.com/docs/getting-started/miniconda/install/linux-install)
 
-Esempio di installazione di Miniconda da linea di comando `bash` per `wsl`:
+Esempio di installazione di Miniconda da linea di comando `bash` su `wsl`:
 - Scaricate lo script di installazione: `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`;
 - Eseguitelo senza root privileges: `bash Miniconda3-latest-Linux-x86_64.sh`;
 - Seguite le istruzioni a terminale.
 
 Per gli utenti macOS: scaricate invece la versione per macOS ([Miniconda3-latest-MacOSX-arm64.sh](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh)).
 
-Da ora in poi farò riferimento a Miniconda, tenete presente che "varianti" alternative dovrebbero funzionare in modo analogo (e.g. [Mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html)).
+Da ora in poi farò riferimento a Miniconda, tenete presente che "varianti" alternative (e.g. [Mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html)) dovrebbero funzionare in modo analogo.
 
-:yellow_circle: Per chi usa **oVirt** :yellow_circle: : Trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM (in `/home/labmd/bin`). Basterà sostituire il comando `conda` con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
+:yellow_circle: Per chi usa oVirt :yellow_circle: : Trovate una versione "lightweight" di Mamba, chiamata Micromamba, già installata sulle VM (in `/home/labmd/bin`). Basterà sostituire il comando `conda` (o `mamba`) con `micromamba`. Le librerie necessarie al corso sono inoltre già state installate, quindi potete passare direttamente allo step :three:.
 
 :warning: Le istruzioni di installazione spiegano anche come configurare e inizializzare l'environment manager in modo automatico. Potreste dover aggiungere alcune righe al file `.bashrc` presente nella vostra home directory per attivare automaticamente l'environment manager all’apertura di una nuova sessione di `bash`.
 
@@ -120,6 +121,27 @@ In alternativa, potete aprire i file di configurazione da linea di comando (cio�
   - `zeolite`: Il secondo esercizio introduce la solvatazione e i modelli dell’acqua. Vi verrà chiesto di simulare una matrice di zeolite a diversi livelli di idratazione per studiarne le proprietà di accumulo di energia. Inoltre, calcolerete il coefficiente di auto-diffusione dell’acqua, un osservabile "tipico" dalla Dinamica Molecolare.
 - `machine-learning`: coming soon...
 
+## Software consigliato
+
+Potete installare programmi utili per i laboratori da linea di comando **bash** via `sudo apt-get` (è l'unica volta che userete `sudo`!). Innanzitutto assicuratevi che `apt-get` sia "up-to-date" eseguendo:
+
+	sudo `apt-get` update
+
+:minidisc: **WSLU** aggiunge alcune utility di integrazione Windows/WSL (come ad esempio l'apertura automatica di Jupyter Notebook su browser):
+
+	sudo apt-get install wslu
+
+:computer: **Gedit** è un editor di testo leggero con GUI molto semplice:
+
+	sudo apt-get install gedit
+
+Per i temerari che hanno deciso di usare Fedora invece di Ubuntu, sostituite `apt-get` con `dnf`.
+
+## Ulteriore software (facoltativo)
+
+- :computer: **Visual Studio Code** - GUI per file editing e programmazione, molto versatile (https://code.visualstudio.com/download);
+- :triangular_ruler: **MATLAB** - gli script di post-processing in `molecular-dynamics` sono disponibili anche in un formato leggibile da MATLAB.
+
 ## Visualizzazione (facoltativo)
 
 Le traiettorie e le configurazioni sono visualizzate nei notebooks tramite widgets `nglview`. Esistono altri modi (potenzialmente migliori) per visualizzare configurazioni molecolari usando software dedicato, _fuori dal notebook_:
@@ -128,16 +150,9 @@ Le traiettorie e le configurazioni sono visualizzate nei notebooks tramite widge
 - **VEGA ZZ**: https://www.ddl.unimi.it/cms/index.php?Software_projects:VEGA_ZZ:Download - richiede registrazione e codice di attivazione;
 - **PyMOL**: https://www.pymol.org/ - richiede registrazione e codice di attivazione.
 
-## Software consigliato (facoltativo)
-
-- :film_projector: **VMD** - vedi sopra;
-- :bar_chart: **Grace** - un software di plotting molto leggero, molto "GROMACS-friendly" (https://plasma-gate.weizmann.ac.il/Grace/);
-- :computer: **Visual Studio Code** - GUI per editing e programmazione, molto versatile (https://code.visualstudio.com/download);
-- :triangular_ruler: **MATLAB** - gli script di post-processing in `molecular-dynamics` sono disponibili anche in un formato leggibile da MATLAB.
-
 ## Ringraziamenti
 
-I codici vengono messi a disposizione degli studenti del corso "Applicazioni Energetiche dei Materiali", e sono sviluppati e mantenuti dal **multi-Scale ModeLing Laboratory (SMaLL)** del Politecnico di Torino (Torino, Italia). Queste risorse sono destinate a scopi didattici e sono state progettate per corsi di laurea magistrale e di dottorato del Politecnico di Torino (2023-2026). La struttura dei notebook è ispirata ai tutorial ufficiali di GROMACS: https://tutorials.gromacs.org/
+I codici sono messi a disposizione degli studenti del corso "Applicazioni Energetiche dei Materiali", e sono sviluppati e mantenuti dal **multi-Scale ModeLing Laboratory (SMaLL)** del Politecnico di Torino (Torino, Italia). Queste risorse sono destinate a scopi didattici e sono state progettate per corsi di laurea magistrale e di dottorato del Politecnico di Torino (2023-2026). La struttura dei notebook è ispirata ai tutorial ufficiali di GROMACS: https://tutorials.gromacs.org/
 
 Autori:
 - Matteo Fasano (matteo.fasano@polito.it)
