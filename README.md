@@ -41,8 +41,9 @@ Spostatevi poi nella cartella della repository:
 
 :yellow_circle: Per chi usa **oVirt** :yellow_circle: : È possibile clonare da GitHub, tuttavia le VM hanno accesso limitato ad internet (i.e. oltre GitHub, non sarà possibile accedere ad alcun URL fuori dal dominio di PoliTo). Nel caso non riusciste a scaricare/clonare da GitHub, trovate comunque il contenuto della repository sulla pagina del corso sul Portale della Didattica.
 
-:warning: Questa repository subirà modifiche durante il corso. Per assicurarvi di essere sempre aggiornati, copiate qualsiasi modifica locale che non volete perdere, ad esempio da linea di comando:
+:warning: Questa repository subirà modifiche durante il corso. Per assicurarvi di essere sempre aggiornati, copiate i notebooks che non volete perdere:
 
+	# Opzionale: i files generati dalle simulazioni molecolari non vengono persi!
 	cp <nome-del-notebook>.ipynb <nome-del-notebook>-backup.ipynb
 
 mettete da parte le modifiche locali:
