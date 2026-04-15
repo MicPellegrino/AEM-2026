@@ -139,8 +139,9 @@ Per i temerari che hanno deciso di usare Fedora invece di Ubuntu, sostituite `ap
 
 ## Ulteriore software (facoltativo)
 
-- :computer: **Visual Studio Code** - GUI per file editing e programmazione, molto versatile (https://code.visualstudio.com/download);
-- :triangular_ruler: **MATLAB** - gli script di post-processing in `molecular-dynamics` sono disponibili anche in un formato leggibile da MATLAB.
+:computer: **Visual Studio Code** - GUI per file editing e programmazione, molto versatile (https://code.visualstudio.com/download);
+
+:triangular_ruler: **MATLAB** - gli script di post-processing in `molecular-dynamics` sono disponibili anche in un formato leggibile da MATLAB.
 
 ## Visualizzazione (facoltativo)
 
