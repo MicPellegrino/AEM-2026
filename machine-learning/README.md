@@ -32,7 +32,7 @@ Verosimilmente, la stragrande maggioranza dei vostri laptop _non_ disporrà di u
 ```shell
 pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 ```
-Tranquilli, gli esercizi sono pensati per girare anche su un 'potato computer'.
+Tranquilli, gli esercizi sono pensati per girare anche su un "potato computer".
 
 ## MACE
 
