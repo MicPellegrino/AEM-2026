@@ -137,6 +137,10 @@ Potete installare programmi utili per i laboratori da linea di comando **bash** 
 
 	sudo apt-get install gedit
 
+:bar_chart: **XmGrace** è un plotter leggero e molto GROMACS-friendly:
+
+	sudo apt-get install grace
+
 Per i temerari che hanno deciso di usare Fedora invece di Ubuntu, sostituite `apt-get` con `dnf`.
 
 ## Ulteriore software (facoltativo)
